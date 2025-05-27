@@ -1,32 +1,60 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 *.so
-*.dylib
-*.dll
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Fortran module files
-*.mod
-*.smod
+# Virtual Environment
+venv/
+env/
+ENV/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Environment Variables
+.env
+.env.*
+!.env.example
 
-# Executables
-*.exe
-*.out
-*.app
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project Specific
+data/documents/*
+data/vector_store/*
+!data/documents/.gitkeep
+!data/vector_store/.gitkeep
+
+# Logs
+*.log
+logs/
+log/
+
+# Cache
+.cache/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+.docker/
+docker-compose.override.yml 
